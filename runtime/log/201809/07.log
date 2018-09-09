@@ -1,0 +1,300 @@
+---------------------------------------------------------------
+[ 2018-09-07T23:29:00+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.043766s] [吞吐率：22.85req/s] [内存消耗：3,139.92kb] [文件加载：84]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001076s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000295s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'name' (T_STRING), expecting ',' or ')'[/home/wwwroot/layblog.blog/runtime/temp/e89c670f27f7a686e2f296ef9308cfc9.php:73]
+---------------------------------------------------------------
+[ 2018-09-07T23:30:13+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.039833s] [吞吐率：25.10req/s] [内存消耗：3,139.93kb] [文件加载：84]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000256s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'name' (T_STRING), expecting ',' or ')'[/home/wwwroot/layblog.blog/runtime/temp/e89c670f27f7a686e2f296ef9308cfc9.php:73]
+---------------------------------------------------------------
+[ 2018-09-07T23:30:31+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.040495s] [吞吐率：24.69req/s] [内存消耗：3,139.93kb] [文件加载：84]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000588s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000248s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'name' (T_STRING), expecting ',' or ')'[/home/wwwroot/layblog.blog/runtime/temp/e89c670f27f7a686e2f296ef9308cfc9.php:73]
+---------------------------------------------------------------
+[ 2018-09-07T23:30:41+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.036833s] [吞吐率：27.15req/s] [内存消耗：3,128.45kb] [文件加载：83]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2018-09-07T23:32:29+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.036318s] [吞吐率：27.53req/s] [内存消耗：3,128.45kb] [文件加载：83]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000218s ]
+---------------------------------------------------------------
+[ 2018-09-07T23:35:47+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.037643s] [吞吐率：26.57req/s] [内存消耗：3,130.07kb] [文件加载：83]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2018-09-07T23:42:25+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.039361s] [吞吐率：25.41req/s] [内存消耗：3,130.07kb] [文件加载：83]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2018-09-07T23:42:50+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.034536s] [吞吐率：28.96req/s] [内存消耗：3,130.28kb] [文件加载：83]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000436s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000187s ]
+---------------------------------------------------------------
+[ 2018-09-07T23:43:20+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/article/detail/id/5.html
+[运行时间：0.037728s] [吞吐率：26.51req/s] [内存消耗：3,128.66kb] [文件加载：83]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/home/article/detail.html [ array (
+  0 => 'title',
+  1 => 'data',
+  2 => 'reply',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:host=127.0.0.1;port=3306;dbname=layblog;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `post` [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `post` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `reply` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `reply` WHERE  `pid` = 5 ORDER BY `create_time` DESC [ RunTime:0.000205s ]

@@ -1,0 +1,44 @@
+{extend name="common:base" /}
+{block name="body"}
+<div class="container-wrap">
+    <div class="container">
+        <div class="contar-wrap">
+                <h4 class="item-title">
+                    <p><i class="layui-icon layui-icon-speaker"></i>公告：<span>欢迎来到我的轻博客</span></p>
+                </h4>
+            {volist name='list' id='article' }
+                <div class="item">
+                    <div class="item-box  layer-photos-demo1 layer-photos-demo">
+                        <h3><a href="{:url('home/article/detail',['id' => $article['id']])}">{$article.title}</a></h3>
+                        <h5>发布于：<span>{$article.create_time}</span></h5>
+                        <p>{$article.preview}</p>
+                        <img src="__IMAGES__/item.png" alt="">
+                    </div>
+                    <div class="comment count">
+                            <a href="{:url('home/article/detail', ['id' => $article['id']])}">
+                                <i class="layui-icon layui-icon-praise">{$article.likes}</i>
+                            </a>
+                            <a href="{:url('home/article/detail#comment', ['id' => $article['id']])}">
+                                <i class="layui-icon layui-icon-dialogue">{$article.comment}</i>
+                            </a>
+                    </div>
+                </div>
+            {/volist}
+        </div>
+        <div class="pagination">
+            <!--<button class="layui-btn layui-btn-normal"></button>-->
+                {$list|raw}
+        </div>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script>
+    layui.use(['jquery', 'layer'], function(){
+        var $ = layui.$
+            ,layer = layui.layer;
+        let first = $('#first');
+        first.addClass('layui-this');
+    });
+</script>
+{/block}

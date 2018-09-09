@@ -1,0 +1,22 @@
+{extend name="common:base" /}
+{block name="body"}
+<div class="container-wrap">
+    <div class="layui-container">
+        <div class="layui-row">
+            {volist name='data' id='vo'}
+                <div class="layui-col-md6">
+                    <div class="tag-item-content">
+                        <h2><a href="{:url('home/tag/list', ['id' => $vo['tid']])}">{$vo.name}</a></h2>
+                        <div class="tag-item-count">
+                            {$vo.cnt}篇文章&nbsp;&nbsp;&nbsp;&nbsp;{$vo.ctime|friendlyDate}
+                        </div>
+                        <p>
+                            {$vo.description}
+                        </p>
+                    </div>
+                </div>
+            {/volist}
+        </div>
+    </div>
+</div>
+{/block}

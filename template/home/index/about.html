@@ -1,0 +1,39 @@
+{extend name="common:base" /}
+{block name="body"}
+<div class="container-wrap">
+    <div class="container">
+        <div class="contar-wrap">
+            <h4 class="item-title">
+                <p><i class="layui-icon layui-icon-speaker"></i>公告：<span>欢迎来到我的轻博客</span></p>
+            </h4>
+            {volist name='list' id='article' }
+            <div class="item">
+                <div class="item-box  layer-photos-demo1 layer-photos-demo">
+                    <h3><a href="article.html">{$article.title}</a></h3>
+                    <h5>发布于：<span>{$article.create_time}</span></h5>
+                    <p>{$article.preview}</p>
+                    <img src="__IMAGES__/item.png" alt="">
+                </div>
+                <div class="comment count">
+                    <!--<i class="layui-icon layui-icon-user"></i>-->
+                    <span>{$article.view}个阅读</span>
+                    <!--<i class="layui-icon layui-icon-dialogue">-->
+                    <a href="article.html#comment">{$article.comment}条评论</a></i>
+                </div>
+            </div>
+            {/volist}
+        </div>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script>
+    layui.use(['jquery', 'layer'], function(){
+        var $ = layui.$
+            ,layer = layui.layer;   //引用jquery完成
+
+        let about = $('#about');
+        about.addClass('layui-this');
+    });
+</script>
+{/block}

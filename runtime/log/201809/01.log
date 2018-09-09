@@ -1,0 +1,228 @@
+---------------------------------------------------------------
+[ 2018-09-01T09:39:23+08:00 ] 192.168.3.137 GET layblog.blog/index.php/index/index/index
+[运行时间：0.032524s] [吞吐率：30.75req/s] [内存消耗：1,638.93kb] [文件加载：61]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-01T09:39:34+08:00 ] 192.168.3.137 GET layblog.blog/
+[运行时间：0.017427s] [吞吐率：57.38req/s] [内存消耗：1,638.78kb] [文件加载：61]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-01T09:39:41+08:00 ] 192.168.3.137 GET layblog.blog/index.php/index/index/index
+[运行时间：0.017897s] [吞吐率：55.88req/s] [内存消耗：1,638.92kb] [文件加载：61]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-01T09:39:43+08:00 ] 192.168.3.137 GET layblog.blog/index.php/index/index/index
+[运行时间：0.019190s] [吞吐率：52.11req/s] [内存消耗：1,638.92kb] [文件加载：61]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-09-01T10:19:29+08:00 ] 192.168.3.137 GET layblog.blog/index/index/index
+[运行时间：0.014540s] [吞吐率：68.78req/s] [内存消耗：1,306.40kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-01T10:19:39+08:00 ] 192.168.3.137 GET layblog.blog/home/index/index
+[运行时间：0.015034s] [吞吐率：66.52req/s] [内存消耗：1,306.40kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-01T10:19:43+08:00 ] 192.168.3.137 GET layblog.blog/home/index/index
+[运行时间：0.015950s] [吞吐率：62.70req/s] [内存消耗：1,306.40kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-01T10:19:43+08:00 ] 192.168.3.137 GET layblog.blog/home/index/index
+[运行时间：0.015854s] [吞吐率：63.08req/s] [内存消耗：1,306.40kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-09-01T10:19:53+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/index/index
+[运行时间：0.019486s] [吞吐率：51.32req/s] [内存消耗：1,725.38kb] [文件加载：66]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [1]Class 'app\think\Controller' not found[/home/wwwroot/layblog.blog/application/home/controller/Index.php:13]
+---------------------------------------------------------------
+[ 2018-09-01T10:24:15+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/index/index
+[运行时间：0.022112s] [吞吐率：45.22req/s] [内存消耗：1,754.49kb] [文件加载：67]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [0]致命错误: Class 'app\common\model\Index' not found[/home/wwwroot/layblog.blog/application/home/controller/Index.php:19]
+---------------------------------------------------------------
+[ 2018-09-01T11:56:41+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/index/index
+[运行时间：0.031900s] [吞吐率：31.35req/s] [内存消耗：2,865.58kb] [文件加载：79]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [0]method not exist:think\db\Query->getPost[/home/wwwroot/layblog.blog/thinkphp/library/think/db/Query.php:178]
+---------------------------------------------------------------
+[ 2018-09-01T11:56:42+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/index/index
+[运行时间：0.031967s] [吞吐率：31.28req/s] [内存消耗：2,865.58kb] [文件加载：79]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [0]method not exist:think\db\Query->getPost[/home/wwwroot/layblog.blog/thinkphp/library/think/db/Query.php:178]
+---------------------------------------------------------------
+[ 2018-09-01T12:11:39+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/index/index
+[运行时间：0.028629s] [吞吐率：34.93req/s] [内存消耗：2,082.79kb] [文件加载：74]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [0]致命错误: Call to undefined method think\Controller::getPost()[/home/wwwroot/layblog.blog/application/home/controller/Index.php:25]
+---------------------------------------------------------------
+[ 2018-09-01T12:11:55+08:00 ] 192.168.3.137 GET layblog.blog/index.php/home/index/index
+[运行时间：0.032772s] [吞吐率：30.51req/s] [内存消耗：2,865.64kb] [文件加载：79]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [0]method not exist:think\db\Query->getPost[/home/wwwroot/layblog.blog/thinkphp/library/think/db/Query.php:178]

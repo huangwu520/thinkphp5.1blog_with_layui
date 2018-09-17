@@ -1,10 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{extend name="common:inner"}
+{block name='css'}
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/login.css" />
+{/block}
+{block name="body"}
+        <div class="m-login-bg">
+            <div class="m-login">
+                <h3>后台系统登录</h3>
+                <div class="m-login-warp">
+                    <form class="layui-form" >
+                        <div class="layui-form-item">
+                            <input type="text" name="username" id="username" required lay-verify="required" placeholder="用户名" autocomplete="off" class="layui-input">
+                        </div>
+                        <div class="layui-form-item">
+                            <input type="text" name="password" required lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input">
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <input type="text" name="verify" required lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
+                            </div>
+                            <div class="layui-inline">
+                                <img class="verifyImg" onclick="this.src='{:captcha_src()}?time='+Math.random()" src="{:captcha_src()}" alt="点击更换" />
+                            </div>
+                        </div>
+                        <div class="layui-form-item m-login-btn">
+                            <div class="layui-inline">
+                                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="login">登录</button>
+                            </div>
+                            <div class="layui-inline">
+                                <button type="reset" class="layui-btn layui-btn-primary">重置输入</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <p class="copyright">Copyright 2015-2018 by github contributor </p>
+            </div>
+        </div>
+{/block}
+{block name="script"}
+        <script>
 
-</body>
-</html>
+            layui.use(['form', 'layedit', 'laydate'], function() {
+                var form = layui.form()
+                    ,layer = layui.layer;
+                // let $ = layui.jquery;
+
+                //自定义验证规则
+                // form.verify({
+                //     title: function(value) {
+                //         if(value.length < 5) {
+                //             return '标题至少得5个字符啊';
+                //         }
+                //     },
+                //     password: [/(.+){6,12}$/, '密码必须6到12位'],
+                //     verity: [/(.+){6}$/, '验证码必须是6位'],
+                //
+                // });
+
+                //打开网页自动聚焦用户名位置
+                $(function(){
+                    $('#username').focus();
+                });
+
+                //监听提交
+                form.on('submit(login)', function(data) {
+                    // let datas = JSON.stringify(data.field);
+                    // console.log(datas);
+                    // alert('nnn');
+                    $.ajax({
+                        type: "POST",
+                        url: "{:url('/admin/login/index')}",
+                        dataType: "json",
+                        data: data.field,
+                        async: false,
+                        success: function (result) {
+                            // console.log(result);
+                            if (result.status === "success") {
+                                layer.msg(result.info, {icon: 1, time: 1000}, function () {
+                                    location.href = '{:url("/admin/index/index")}';
+                                });
+                            } else {
+                                layer.msg(result.info, {icon: 2, time: 1000}, function () {
+                                    location.href = '{:url("/admin/login/index")}';
+                                });
+                            }
+                        },
+                        error: function () {
+                            alert('请联系网站管理员');
+                        // console.log(data);
+                        }
+                    });
+                    return false;
+                });
+            });
+        </script>
+{/block}

@@ -14,11 +14,11 @@ class Login extends Controller
 {
     public function index()
     {
-        // 已登录用户使用session登录
-        if(Session::get('loginUser') && Session::get('loginUserId'))
-        {
-            return $this->redirect('admin/index/index');
-        }
+        // // 已登录用户使用session登录
+        // if(Session::get('loginUser') && Session::get('loginUserId'))
+        // {
+        //     return $this->redirect('admin/index/index');
+        // }
 
         if($this->request->isPost())
         {

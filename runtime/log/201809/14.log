@@ -1,0 +1,293 @@
+---------------------------------------------------------------
+[ 2018-09-14T12:03:57+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=1123&password=123&verity=123
+[运行时间：0.022994s] [吞吐率：43.49req/s] [内存消耗：1,902.86kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '1123',
+  'password' => '123',
+  'verity' => '123',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:04:00+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=123&password=123&verity=123
+[运行时间：0.022137s] [吞吐率：45.17req/s] [内存消耗：1,902.87kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index?name=1123&password=123&verity=123',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '123',
+  'password' => '123',
+  'verity' => '123',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:04:21+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=123&password=123&verity=123
+[运行时间：0.022840s] [吞吐率：43.78req/s] [内存消耗：1,902.87kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index?name=1123&password=123&verity=123',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '123',
+  'password' => '123',
+  'verity' => '123',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:04:24+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index
+[运行时间：0.021903s] [吞吐率：45.66req/s] [内存消耗：1,901.70kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:04:27+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=234&password=234&verity=234
+[运行时间：0.022668s] [吞吐率：44.11req/s] [内存消耗：1,902.87kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '234',
+  'password' => '234',
+  'verity' => '234',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:08:44+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=234&password=234&verity=234
+[运行时间：0.025564s] [吞吐率：39.12req/s] [内存消耗：1,903.09kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '234',
+  'password' => '234',
+  'verity' => '234',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:08:47+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345
+[运行时间：0.021174s] [吞吐率：47.23req/s] [内存消耗：1,903.09kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index?name=234&password=234&verity=234',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '345',
+  'password' => '345',
+  'verity' => '345',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:10:18+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345
+[运行时间：0.024017s] [吞吐率：41.64req/s] [内存消耗：1,903.09kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index?name=234&password=234&verity=234',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '345',
+  'password' => '345',
+  'verity' => '345',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T12:10:20+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345
+[运行时间：0.022646s] [吞吐率：44.16req/s] [内存消耗：1,903.09kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '345',
+  'password' => '345',
+  'verity' => '345',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T23:55:22+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345
+[运行时间：0.022802s] [吞吐率：43.86req/s] [内存消耗：1,903.09kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '345',
+  'password' => '345',
+  'verity' => '345',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-09-14T23:55:25+08:00 ] 192.168.3.137 GET layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345
+[运行时间：0.021514s] [吞吐率：46.48req/s] [内存消耗：1,903.09kb] [文件加载：68]
+[ info ] [ LANG ] /home/wwwroot/layblog.blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://layblog.blog/index.php/admin/login/index?name=345&password=345&verity=345',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3400.0 Iron Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'layblog.blog',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'name' => '345',
+  'password' => '345',
+  'verity' => '345',
+)
+[ info ] [ VIEW ] /home/wwwroot/layblog.blog/./template/admin/login/index.html [ array (
+) ]

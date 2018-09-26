@@ -1,4 +1,4 @@
-<?php /*a:4:{s:59:"/home/wwwroot/layblog.blog/./template/home/index/index.html";i:1536338483;s:59:"/home/wwwroot/layblog.blog/./template/home/common/base.html";i:1536226655;s:61:"/home/wwwroot/layblog.blog/./template/home/common/header.html";i:1536228081;s:61:"/home/wwwroot/layblog.blog/./template/home/common/footer.html";i:1535642945;}*/ ?>
+<?php /*a:4:{s:59:"/home/wwwroot/layblog.blog/./template/home/index/index.html";i:1536338483;s:59:"/home/wwwroot/layblog.blog/./template/home/common/base.html";i:1536226655;s:61:"/home/wwwroot/layblog.blog/./template/home/common/header.html";i:1536423013;s:61:"/home/wwwroot/layblog.blog/./template/home/common/footer.html";i:1535642945;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +34,7 @@
                 <li class="layui-nav-item"><a href="<?php echo url('home/tag/index'); ?>" id="tags">标签</a></li>
                 <li class="layui-nav-item"><a href="<?php echo url('home/index/about'); ?>" id="about">关于</a></li>
             </ul>
-            <a href="#" class="personal pull-left">
+            <a href="<?php echo url('admin/index/index'); ?>" class="personal pull-left">
                 <i class="layui-icon layui-icon-username"></i>
             </a>
         </div>

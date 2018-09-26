@@ -27,7 +27,7 @@ return [
         '__STATIC__'=>'/static',
         '__ADMIN__' => '/static/admin',
         '__HOME__' => '/static/default',
-        '__LAYUI__' => '/static/layui',
+        '__LAYUI__' => '/static/admin/layui',
         '__JS__' => '/static/js',
         '__CSS__' => '/static/css',
         '__IMAGES__' => '/static/images',

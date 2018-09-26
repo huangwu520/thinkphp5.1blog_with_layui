@@ -11,12 +11,14 @@ use think\facade\Session;
 use app\common\model\User as UserModel;
 use app\common\model\Post as PostModel;
 use app\common\model\Reply as ReplyModel;
+use app\common\model\System as SystemModel;
 use think\facade\Env;
 
 class Index extends Base
 {
     public function index()
     {
+
         return $this->fetch();
     }
 
@@ -81,8 +83,60 @@ class Index extends Base
 
     public function adminInfo()
     {
-        $data = UserModel::where('id',1)->find();
+        if($this->request->isPost())
+        {
+            // 获取POST提交过来的全部数据，并trim过滤
+            $data = input('post.','trim');
+            if(!empty($data['email']))
+            {
+                $result = $this->Validate($data,'AdminInfo');
+                if($result !== true)   //验证失败返回json
+                {
+                    $res = [
+                        "status" => "fail",
+                        "info" => $result
+                    ];
+                    return json($res);
+                }
+                //验证成功,保存数据
+                $user = UserModel::get(Session::get('loginUserId'));
+                $user-> email = $data['email'];
+                $user-> about = $data['about'];
+                $res = $user->save();
 
+                if($res == true)
+                {
+                    $res = [
+                        "status" => "success",
+                        "info" => "更新完成"
+                    ];
+                    return json($res);
+                }
+            }else{
+                $result = $this->Validate($data,'User.ChangePw');
+                if($result == false){
+                    $res = [
+                        "status" => "fail",
+                        "info" => $result
+                    ];
+                    return json($res);
+                }
+                $user_id = Session::get('loginUserId');
+                $user = UserModel::get($user_id);
+                $user-> password = password_hash($data['password'], PASSWORD_BCRYPT);
+                $res = $user->save();
+                if($res == true)
+                {
+                    $res = [
+                        "status" => "success",
+                        "info" => "更新完成"
+                    ];
+                    return json($res);
+                }
+            }
+
+        }
+        $data = UserModel::where('id',Session::get('loginUserId'))->find();
         $this->assign('data', $data);
         return $this->fetch();
     }
@@ -92,7 +146,17 @@ class Index extends Base
         return $this->fetch();
     }
 
+    public function menuAdd()
+    {
+        return $this->fetch();
+    }
+
     public function menu2()
+    {
+        return $this->fetch();
+    }
+
+    public function menuAdd2()
     {
         return $this->fetch();
     }
@@ -102,13 +166,117 @@ class Index extends Base
         return $this->fetch();
     }
 
+    public function articleAdd()
+    {
+        return $this->fetch();
+    }
+
+    public function articleDetail()
+    {
+        return $this->fetch();
+    }
+
+    public function articleInfo()
+    {
+        return $this->fetch();
+    }
+
     public function danyeList()
+    {
+        return $this->fetch();
+    }
+
+    public function danyeDetail()
+    {
+        return $this->fetch();
+    }
+
+    public function columnDanyeDetail()
     {
         return $this->fetch();
     }
 
     public function system()
     {
+        if($this->request->isPost())
+        // if(true)
+        {
+            // 获取POST提交过来的全部数据，并trim过滤
+            // $datao = (array)json_decode('{"webname":"科技有限公司","domain":"layblog.blog","email":"521@qq.com","static":"0","ICP":"","copyright":"保温公司 copyRight © 2016","statistic":""}');
+            // halt($datao);
+            $data = input('post.','trim');
+            // halt($data);
+            if(!empty($data))
+            {
+                $result = $this->Validate($data,'System.Edit');
+                if($result !== true)   //验证失败返回json
+                {
+                    $res = [
+                        "status" => "fail",
+                        "info" => $result
+                    ];
+                    return json($res);
+                }
+                //验证成功,保存数据
+                $sys_info = SystemModel::all();
+                foreach($sys_info as $k=>$v){
+                    foreach($data as $ks=>$vs){
+                        // $sys_id = $k;
+                        if($v['name'] == $ks){
+                            if(!empty($vs)){
+                                // $list = [['id'=>$k+1],['name'=>$v['content']],['content'=>$vs]];  //本人不会批量保存数据
+                                $sys = SystemModel::get($k+1);
+                                $sys->content = $vs;
+                                $sys->save();
+                            }
+                        }
+                        // else{
+                        //     $list = [['id'=>$k+1],['name'=>$v['content']],['content'=>$vs]];
+                        // }
+                    }
+                }
+                // $sys = new SystemModel();
+                // $res = $sys->saveAll($list);
+
+                // if($res == true)
+                // {
+                    $res = [
+                        "status" => "success",
+                        "info" => "更新完成"
+                    ];
+                    return json($res);
+                // }
+            }else{
+                $result = $this->Validate($data,'User.ChangePw');
+                if($result == false){
+                    $res = [
+                        "status" => "fail",
+                        "info" => $result
+                    ];
+                    return json($res);
+                }
+                $sys_info_id = Session::get('loginUserId');
+                $sys_info = UserModel::get($sys_info_id);
+                $sys_info-> password = password_hash($data['password'], PASSWORD_BCRYPT);
+                $res = $sys_info->save();
+                if($res == true)
+                {
+                    $res = [
+                        "status" => "success",
+                        "info" => "更新完成"
+                    ];
+                    return json($res);
+                }
+            }
+
+        }
+        $datas = SystemModel::all();
+        // dump($datas);
+        foreach($datas as $k=>$v){
+            $data[$v['name']] = $v['content'];
+        }
+        // halt($data);
+        $this->assign('data', $data);
         return $this->fetch();
     }
 

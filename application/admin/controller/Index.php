@@ -7,6 +7,7 @@
  */
 
 namespace app\admin\controller;
+use think\Controller;
 use think\facade\Session;
 use app\common\model\User as UserModel;
 use app\common\model\Post as PostModel;
@@ -14,11 +15,16 @@ use app\common\model\Reply as ReplyModel;
 use app\common\model\System as SystemModel;
 use think\facade\Env;
 
-class Index extends Base
+class Index extends Controller
 {
     public function index()
-    {
+    {//router admin/home
 
+        return $this->fetch();
+    }
+
+    public function console()
+    {
         return $this->fetch();
     }
 

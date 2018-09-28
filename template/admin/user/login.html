@@ -102,7 +102,7 @@
       //请求登入接口
         $.ajax({
             type: "POST",
-            url: "{:url('/admin/login/index')}",
+            url: "{:url('/admin/login')}",
             dataType: "json",
             data: data.field,
             async: false,
@@ -114,7 +114,7 @@
                     });
                 } else {
                     layer.msg(result.info, {icon: 2, time: 3000}, function () {
-                        location.href = '{:url("/admin/login/index")}';
+                        location.href = '{:url("/admin/login")}';
                     });
                 }
             },

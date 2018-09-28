@@ -15,7 +15,9 @@ class Base extends Controller
     {
         if(!Session::get('loginUser') || !Session::get('loginUserId'))
         {
-            return $this->redirect('admin/login/index');
+            return $this->redirect('admin/login');
+        }else {
+            // return $this->redirect('admin/login');
         }
     }
 }

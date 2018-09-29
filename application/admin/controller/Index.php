@@ -18,7 +18,11 @@ class Index extends Base
 {
     public function index()
     {//router admin/home
-
+        $id= Session::get('loginUserId');
+        $user = UserModel::get($id);
+        $data =  $user->nickname;
+        // $data = $user['username'];   两种方法都能获得数据
+        $this->assign('data',$data);
         return $this->fetch();
     }
 
@@ -27,24 +31,24 @@ class Index extends Base
         return $this->fetch();
     }
 
-    public function logout()
-    {
-        // if($this->request->isPost())
-        // {
-        //     $data = input('post.');
-        //     // halt($data);
-        //     if($data.['logout'] === 'true'){
-        //         Session::clear();
-        //         $res = [
-        //             'status' => 'success',
-        //             'info' => '正在退出登录'
-        //         ];
-        //         return json($res);
-        //     }
-        // }
-        Session::clear();
-        return $this->redirect('admin/login/index');
-    }
+    // public function logout()
+    // {
+    //     // if($this->request->isPost())
+    //     // {
+    //     //     $data = input('post.');
+    //     //     // halt($data);
+    //     //     if($data.['logout'] === 'true'){
+    //     //         Session::clear();
+    //     //         $res = [
+    //     //             'status' => 'success',
+    //     //             'info' => '正在退出登录'
+    //     //         ];
+    //     //         return json($res);
+    //     //     }
+    //     // }
+    //     Session::clear();
+    //     return $this->redirect('login');
+    // }
 
     public function welcome()
     {

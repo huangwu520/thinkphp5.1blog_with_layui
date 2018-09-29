@@ -13,11 +13,9 @@ class Base extends Controller
 {
     protected function initialize()
     {
-        if(!Session::get('loginUser') || !Session::get('loginUserId'))
+        if(!Session::get('loginUsername') || !Session::get('loginUserId'))
         {
-            return $this->redirect('admin/login');
-        }else {
-            // return $this->redirect('admin/login');
+            return $this->redirect('@admin/login'); //此处url不能使用路由定义地址
         }
     }
 }

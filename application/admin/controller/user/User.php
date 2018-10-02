@@ -6,12 +6,15 @@
  * Time: 0:20
  */
 namespace app\admin\controller\user;
-use think\Controller;
+// use think\Controller;
+use app\admin\controller\Base;
 
-class User extends Controller
+class User extends Base
 {
     public function userList()
     {
         return $this->fetch();
     }
+
+
 }

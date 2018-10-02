@@ -108,4 +108,9 @@ class Set extends Base
         //未提交时渲染登录页面
         return $this->fetch();
     }
+
+    public function email()
+    {
+        return $this->fetch();
+    }
 }

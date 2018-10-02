@@ -1,0 +1,24 @@
+{extend name="common:inner"}
+{block name="css"}
+{/block}
+{block name="body"}
+<div class="layui-fluid">
+    <div class="layadmin-tips">
+        <i class="layui-icon" face>&#xe664;</i>
+
+        <div class="layui-text" style="font-size: 20px;">
+            好像出错了呢
+        </div>
+
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script>
+    layui.config({
+        base: '__ADMIN__/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index']);
+</script>
+{/block}

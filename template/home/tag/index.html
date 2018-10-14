@@ -3,19 +3,26 @@
 <div class="container-wrap">
     <div class="layui-container">
         <div class="layui-row">
-            {volist name='data' id='vo'}
-                <div class="layui-col-md6">
-                    <div class="tag-item-content">
-                        <h2><a href="{:url('home/tag/list', ['id' => $vo['tid']])}">{$vo.name}</a></h2>
-                        <div class="tag-item-count">
-                            {$vo.cnt}篇文章&nbsp;&nbsp;&nbsp;&nbsp;{$vo.ctime|friendlyDate}
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                <legend>博客标签</legend>
+            </fieldset>
+            <div class="tag-list">
+                <div class="layui-row layui-col-space15">
+                    {volist name='data' id='vo'}
+                        <div class="layui-col-md6">
+                            <div class="layui-card">
+                                <div class="layui-card-header" id="tag-title">
+                                    <a href="{:url('home/tag/list', ['id' => $vo['tid']])}">{$vo.name}</a>
+                                </div>
+                                <div class="layui-card-body" id="tag-content">
+                                    {$vo.ctime|friendlyDate}&nbsp&nbsp&nbsp&nbsp共计:{$vo.cnt}篇文章<br><br>
+                                    {$vo.description}
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                            {$vo.description}
-                        </p>
-                    </div>
+                    {/volist}
                 </div>
-            {/volist}
+            </div>
         </div>
     </div>
 </div>

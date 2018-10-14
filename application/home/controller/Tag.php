@@ -16,9 +16,9 @@ class Tag extends Controller
     public function index()
     {
         $data = TagModel::alias('t')
-            ->join('tag_post tp', 'tp.tag_id = t.tid')
-            ->field(['tp.tag_id', 'count(tp.tag_id)'=>'cnt','t.tid', 't.name', 't.description', 't.create_time'=>'ctime'])
-            ->group('tp.tag_id')
+            ->join('tag_post tp', 'tp.tid = t.id')
+            ->field(['tp.tid', 'count(tp.tid)'=>'cnt','t.id', 't.name', 't.description', 't.create_time'=>'ctime'])
+            ->group('tp.tid')
             ->select();
         $title= '文章';
         $this->assign('title',$title);
@@ -26,16 +26,15 @@ class Tag extends Controller
         return $this->fetch();
     }
 
-    public function list($tid=1)
+    public function lists($tid=1)
     {
-        $list = TagPostModel::Where('tag_id',$tid)->alias('t')
+        $list = TagPostModel::Where('tid',$tid)->alias('t')
             ->join('post p', 't.post_id = p.id')
             ->field('p.id, p.title, p.preview, p.author, p.likes, p.create_time, p.comment, p.status')
             ->where('p.status', 1)
             ->paginate(10);
         //
         $name = TagModel::where('tid',$tid)->field('name')->find();
-        // halt($name);
         $title= '标签文章';
         $this->assign('title',$title);
         $this->assign('list',$list);

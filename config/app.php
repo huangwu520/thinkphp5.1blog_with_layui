@@ -21,7 +21,7 @@ return [
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => true,
+    'app_trace'              => false,
     // 是否支持多模块
     'app_multi_module'       => true,
     // 入口自动绑定模块
@@ -71,8 +71,8 @@ return [
     'use_action_prefix'      => false,
     // 操作方法后缀
     'action_suffix'          => '',
-    // 自动搜索控制器
-    'controller_auto_search' => false,
+    // 自动搜索控制器,多级控制器使用
+    'controller_auto_search' => true,
 
     // +----------------------------------------------------------------------
     // | URL设置
@@ -135,6 +135,7 @@ return [
 
     // 异常页面的模板文件
     'exception_tmpl'         => Env::get('think_path') . 'tpl/think_exception.tpl',
+    // 'exception_tmpl'         => Env::get('root_path') . 'template/tips/404.html',
 
     // 错误显示信息,非调试模式有效
     'error_message'          => '页面错误！请稍后再试～',
@@ -143,4 +144,11 @@ return [
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
 
+    //单独的异常页面模板
+    'http_exception_template'    =>  [
+        // 定义404错误的模板文件地址
+        404 =>  Env::get('root_path') . 'template/tips/404.html',
+        // 还可以定义其它的HTTP status
+        401 =>  Env::get('app_path') . 'template/tips/errors.html',
+    ]
 ];

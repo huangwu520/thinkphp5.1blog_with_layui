@@ -28,13 +28,13 @@ class Tag extends Controller
 
     public function lists($tid=1)
     {
-        $list = TagPostModel::Where('tid',$tid)->alias('t')
-            ->join('post p', 't.post_id = p.id')
-            ->field('p.id, p.title, p.preview, p.author, p.likes, p.create_time, p.comment, p.status')
+        $list = TagPostModel::alias('tp')
+            ->join('post p', 'tp.tid = p.id')
+            ->field(['p.id', 'tp.tid' ,'count(tp.tid)'=>'count_tp', 'p.title', 'p.preview', 'p.author', 'p.likes', 'p.create_time', 'p.comment', 'p.status'])
             ->where('p.status', 1)
             ->paginate(10);
-        //
-        $name = TagModel::where('tid',$tid)->field('name')->find();
+        $name = TagModel::where('id',$tid)->field('name')->find();
+        $name['count_tp'] = $list[0]['count_tp'];
         $title= '标签文章';
         $this->assign('title',$title);
         $this->assign('list',$list);

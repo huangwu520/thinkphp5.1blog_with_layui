@@ -18,14 +18,12 @@ class Index extends Controller
         $list = PostModel::where('status',1)    //1 帖子显示 2 草稿 3.回收站
             ->field('id,title,author,likes,preview,create_time,comment,status')
             ->paginate(2,false,['query'=>request()->param()]);
-        // halt($list);
         $title= '首页';
         // 获取分页显示
-        $page = $list->render();
-        // halt($page);
+        // $page = $list->render();
         $this->assign('title',$title);
         $this->assign('list',$list);
-        $this->assign('page', $page);
+        // $this->assign('page', $page);
         // halt($page);
         // $this->assign('top',$top);
         return $this->fetch();

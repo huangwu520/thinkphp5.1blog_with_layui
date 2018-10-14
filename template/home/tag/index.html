@@ -12,7 +12,7 @@
                         <div class="layui-col-md6">
                             <div class="layui-card">
                                 <div class="layui-card-header" id="tag-title">
-                                    <a href="{:url('home/tag/list', ['id' => $vo['tid']])}">{$vo.name}</a>
+                                    <a href="{:url('home/tag/lists', ['id' => $vo['tid']])}">{$vo.name}</a>
                                 </div>
                                 <div class="layui-card-body" id="tag-content">
                                     {$vo.ctime|friendlyDate}&nbsp&nbsp&nbsp&nbsp共计:{$vo.cnt}篇文章<br><br>

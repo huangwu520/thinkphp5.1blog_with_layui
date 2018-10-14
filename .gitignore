@@ -1,9 +1,9 @@
 /.idea
 /.vscode
-/vendor
 *.log
 thinkphp
 .env
 .DS_Store
+/runtime
 runtime
 .nginx.conf
